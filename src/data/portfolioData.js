@@ -1,5 +1,5 @@
 export const personalInfo = {
-  name: "Garry Audie",
+  name: "Aditya Yakub",
   nickname: "Aditya",
   title: "Creator & Tech Explorer",
   tagline: "I translate complex tech into content that clicks.",
