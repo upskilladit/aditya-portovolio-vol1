@@ -1,164 +1,128 @@
 export const personalInfo = {
   name: "Aditya Yakub",
+  brandName: "Garry Audie",
   nickname: "Aditya",
   title: "Creator & Tech Explorer",
   tagline: "I translate complex tech into content that clicks.",
-  bio: "Garry Audie is an AI creator based in Indonesia, helping global brands, technology companies, and GTM teams understand Indonesian audiences through creator-led content, product storytelling, and practical insight into AI tools and workflows.",
-  aboutDetailed: "Garry Audie is an Indonesia-based creator covering AI tools, SaaS, creator workflows, and emerging technology through a commercially sharp but audience-friendly lens. With a background in videography and branded storytelling, he helps translate technical products into content that actually lands.",
+  bio: "Garry Audie is an Indonesia-based creator covering AI tools, SaaS, creator workflows, and emerging technology through a commercially sharp but audience-friendly lens. With a background in videography and branded storytelling, he helps translate technical products into content that actually lands.",
+  status: "Available for opportunities",
+  location: "Tangerang, Indonesia • Available Worldwide",
   email: "business@adplay.id",
   phone: "(+62) 85176785180",
-  location: "Tangerang, Indonesia • Available Worldwide",
-  status: "Available for opportunities",
-  socials: {
+  social: {
     youtube: "https://youtube.com/@garryaudie",
-    linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
-    twitter: "https://x.com",
-    github: "https://github.com/upskilladit"
-  }
+    tiktok: "https://tiktok.com/@garryaudie",
+    linkedin: "https://linkedin.com/in/garryaudie",
+    instagram: "https://instagram.com/garryaudie",
+  },
 };
 
 export const latestVideo = {
-  id: "00",
-  title: "Latest YouTube Video.",
-  subtitle: "Watch the breakdown on the newest frontier models and AI workflows.",
-  youtubeId: "dQw4w9WgXcQ", // Replaceable with real video ID
-  thumbnailUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
-  views: "45.2K views",
-  duration: "14:20",
-  topic: "DeepSeek vs Claude 3.7 vs Gemini 2.0 Benchmark"
+  title: "Cara gw catet pengeluaran.",
+  thumbnail: "./assets/Latest_YouTube_Video.png",
+  youtubeUrl: "https://youtube.com/@garryaudie",
 };
 
 export const blogArticles = [
   {
-    id: "claude-secret-codes",
-    title: "Claude Secret Codes: 100 Slash Command & Shortcut buat Claude",
-    category: "AI Tools",
-    readTime: "7 menit baca",
+    id: 1,
+    category: "AI TOOLS",
+    title: "Claude Secret Codes: 100 Stash Command & Shortcut buat Claude",
     excerpt: "Kumpulan 100 \"secret code\" buat Claude — slash command dan shortcut yang maksa Claude masuk ke mode, format, atau pola reasoning tertentu. Ini cara mikirin dan makainya biar nggak cuma gimmick.",
-    date: "12 Feb 2026",
-    badge: "100 Prompt & Shortcuts",
-    coverTheme: "dark-terminal",
-    content: `
-# Claude Secret Codes: 100 Slash Command & Shortcut buat Claude
-
-Banyak orang memakai Claude hanya sekadar mengetik prompt biasa. Padahal, dengan memanfaatkan struktur prompt engineering terarah dan pseudo-command slash, kita bisa memaksa model masuk ke reasoning pipeline yang jauh lebih tajam.
-
-### 1. The Reasoning Mode Hack
-Gunakan prompt terstruktur seperti \`/deepthink\` atau \`/architect\` untuk memisahkan fase *Planning* dari *Execution*.
-
-\`\`\`bash
-/deepthink --focus="database architecture" --constraints="zero downtime, PostgreSQL 16"
-\`\`\`
-
-### 2. Output Formatting Directives
-Hindari jawaban bertele-tele dengan membatasi output hanya ke kode atau tabel terstruktur.
-    `
+    readTime: "7 menit baca",
+    date: "14 Feb 2025",
+    image: "./assets/AI_Tools_Showcase.png",
+    link: "#",
   },
   {
-    id: "cari-leads-firecrawl",
+    id: 2,
+    category: "AI TOOLS",
     title: "Cari Leads dari Web Pakai Claude Code + Firecrawl (Setup, Prompt, dan Skill)",
-    category: "AI Tools",
+    excerpt: "Lu bisa kasih Claude Code akses live ke web dan suruh dia ngumpulin leads. Tinggal deskripsiin bisnis yang lu cari, Claude nyari dan baca halamannya, terus balikin list rapi berisi company plus kontak publiknya. Ini setup lengkapnya, plus cara mainnya biar nggak kena blokir.",
     readTime: "8 menit baca",
-    excerpt: "Lu bisa kasih Claude Code akses live ke web dan suruh dia ngumpulin leads. Tinggal deskripsiin bisnis yang lu cari, Claude nyari dan baca halamannya, terus balikin list rapi berisi company plus kontak publiknya.",
-    date: "28 Jan 2026",
-    badge: "Firecrawl + Claude Code",
-    coverTheme: "fire-crawl",
-    content: `
-# Cari Leads dari Web Pakai Claude Code + Firecrawl
-
-Otomatisasi lead generation menggunakan kombinasi web crawler berbasis Markdown dan LLM reasoning engine.
-
-### Persiapan Setup
-1. Dapatkan Firecrawl API Key
-2. Pasang MCP Server Firecrawl di Claude Desktop / Claude Code
-3. Eksekusi prompt automasi scraping yang mematuhi robots.txt
-    `
+    date: "10 Feb 2025",
+    image: "./assets/Gemini_3_Coverage.png",
+    link: "#",
   },
   {
-    id: "humanize-ai-text",
+    id: 3,
+    category: "AI TOOLS",
     title: "Humanize AI Text: Bikin Tulisan Lolos Detektor dengan Skor 0% AI",
-    category: "AI Tools",
+    excerpt: "AI detector nggak baca makna tulisan lu, dia ngukur pola statistik. Hapus polanya, tulisan lu kebaca sebagai manusia. Ini cara bikin skill Claude reusable yang nge-humanize semua tulisan lu — satu command, selamanya.",
     readTime: "10 menit baca",
-    excerpt: "AI detector nggak baca makna tulisan lu, dia ngukur pola statistik (burstiness & perplexity). Hapus polanya, tulisan lu kebaca sebagai manusia. Ini cara bikin skill reusable yang nge-humanize semua tulisan.",
-    date: "15 Jan 2026",
-    badge: "0% AI Score Guide",
-    coverTheme: "emerald-matrix",
-    content: `
-# Humanize AI Text: Memahami Burstiness dan Variasi Kalimat
-
-Detektor AI seperti GPTZero atau Originality.ai tidak memiliki kecerdasan magis — mereka hanya mengukur metrik probabilitas distribusi kata (perplexity) dan variasi panjang kalimat (burstiness).
-
-Dengan merestrukturisasi ritme kalimat dari monoton menjadi dinamis, teks AI Anda akan terasa alami dan humanis.
-    `
-  }
+    date: "04 Feb 2025",
+    image: "./assets/Replit_Dev_Content.png",
+    link: "#",
+  },
 ];
 
 export const portfolioProjects = [
   {
     id: 1,
     title: "Mobile App Dev",
-    category: "React Native • Content",
-    views: "91.3K views",
-    multiplier: "15.2x",
-    description: "End-to-end showcase of building high-performance mobile application with smooth micro-interactions.",
-    tag: "Dev",
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=800&auto=format&fit=crop"
+    category: "Feed Video • Demand",
+    stats: "15.2k views • 91.3k impressions",
+    image: "./assets/Mobile_App_Dev.png",
+    tags: ["Research", "Campaign"],
+    link: "#",
   },
   {
     id: 2,
     title: "Figure 03 Robot",
-    category: "AI • Tech Review",
-    views: "183K views",
-    multiplier: "30.5x",
-    description: "In-depth breakdown of humanoid robotics, neural control systems, and industrial automation capabilities.",
-    tag: "AI",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=800&auto=format&fit=crop"
+    category: "AI • Tech Realise",
+    stats: "30.5k views • 193k views",
+    image: "./assets/Figure_03_Robot.png",
+    tags: ["Campaign"],
+    link: "#",
   },
   {
     id: 3,
     title: "VERV Brand Campaign",
     category: "Brand • Creative",
-    views: "19.5K views",
-    multiplier: "3.3x",
-    description: "High-fashion aesthetic cinematography, sound design, and viral narrative strategy for modern lifestyle brand.",
-    tag: "Brand",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop"
+    stats: "3.2k views • 18.5k views",
+    image: "./assets/VERV_Brand_Campaign.png",
+    tags: ["Branding"],
+    link: "#",
   },
   {
     id: 4,
     title: "Gemini 3 Coverage",
-    category: "AI • Tech Content",
-    views: "12.7K views",
-    multiplier: "2.1x",
-    description: "Deep dive analysis into multimodal reasoning, real-time agentic programming, and benchmark results.",
-    tag: "AI",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop"
+    category: "AI • Tech Campaign",
+    stats: "2.1k views • 12.7k views",
+    image: "./assets/Gemini_3_Coverage.png",
+    tags: ["Tech", "AI"],
+    link: "#",
   },
   {
     id: 5,
     title: "AI Tools Showcase",
-    category: "Dreamina • CapCut",
-    views: "10K views",
-    multiplier: "1.7x",
-    description: "Practical tutorial on combining AI image generators with modern timeline editors for high retention short-form video.",
-    tag: "AI",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop"
+    category: "Creative • Dev Call",
+    stats: "1.7k views • 10k views",
+    image: "./assets/AI_Tools_Showcase.png",
+    tags: ["AI"],
+    link: "#",
   },
   {
     id: 6,
     title: "Replit Dev Content",
     category: "Developer • Tools",
-    views: "20K views",
-    multiplier: "3.3x",
-    description: "Cloud deployment workflows, collaborative live coding, and rapid prototype validation for startups.",
-    tag: "Dev",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop"
-  }
+    stats: "3.3k views • 20k views",
+    image: "./assets/Replit_Dev_Content.png",
+    tags: ["Dev"],
+    link: "#",
+  },
 ];
+
+export const aboutInfo = {
+  image: "./assets/Garry.png",
+  description:
+    "Garry Audie is an Indonesia-based creator covering AI tools, SaaS, creator workflows, and emerging technology through a commercially sharp but audience-friendly lens. With a background in videography and branded storytelling, he helps translate technical products into content that actually lands.",
+  resumeUrl: "#",
+};
 
 export const experienceTimeline = [
   {
+    id: 1,
     role: "Founder",
     company: "AdPlay Media Indonesia",
     type: "Full-time",
@@ -168,122 +132,147 @@ export const experienceTimeline = [
       "Worked with big brands — over 150+ total client projects and counting.",
       "Specialized in Education and E-Learning Videos.",
       "Professional real estate listings tour, 360 videos, and showcase."
-    ]
+    ],
   },
   {
+    id: 2,
     role: "Head of Media",
     company: "Akademi Crypto",
     type: "Contract",
     period: "Jan 2024 — Oct 2024",
     highlights: [
-      "Directed high-performing educational content and visual branding strategy.",
-      "Scaled viewer engagement across YouTube and social media channels."
-    ]
+      "Led video production and social media strategy for crypto education ecosystem."
+    ],
   },
   {
+    id: 3,
     role: "Marketing Director",
-    company: "Brix Performance",
+    company: "BRIX Performance",
     type: "Full-time",
     period: "Dec 2020 — Jul 2022",
     highlights: [
       "Built the company from scratch: logo, packaging design, social media, website, product photos, campaign videos, and guidelines for future employees.",
-      "Drive sales growth from day 1 — BRIX Performance is now a well-known brand in Indonesia's car community, used by several national racing teams at Sentul International Circuit.",
+      "Drive sales growth from day 1 — BRIX Performance is now a well-known brand in Indonesia's car community, used by several national racing teams at the Sentul International Circuit.",
       "BRIX has generated over Rp3 Billion in revenue."
-    ]
+    ],
   },
   {
-    role: "Bachelor of Business Administration — BBA",
-    company: "Institut Teknologi Bandung (ITB)",
-    type: "Business, Management & Marketing",
+    id: 4,
+    role: "Bachelor of Business Administration",
+    company: "Institut Teknologi Bandung",
+    type: "BBA · Business, Management & Marketing",
     period: "2018 — 2021",
-    highlights: [
-      "Focused on consumer psychology, digital marketing, and venture scaling."
-    ]
-  }
+    highlights: [],
+  },
 ];
+
+export const companyData = {
+  name: "AdPlay Media",
+  pretitle: "My Company",
+  subtitle: "(CLICK TO EXPLORE)",
+  image: "./assets/AdPlay_Media.png",
+  description:
+    "AdPlay Media is the company layer: campaign production, branded storytelling, and broader media work for brands entering or growing in Indonesia.",
+  visitUrl: "https://adplay.id",
+};
 
 export const digitalProducts = [
   {
-    id: "template-portfolio",
-    title: "Template Portfolio Kerja",
+    id: 1,
     category: "Portfolio",
+    title: "Template Portfolio Kerja",
     price: "Rp 59.000",
-    description: "Template website portfolio modern dengan layout clean, responsif, dan siap dideploy.",
-    badge: "Best Seller"
+    image: "./assets/Template_Portfolio_Kerja.png",
+    link: "#",
   },
   {
-    id: "winners-pitchdeck",
-    title: "Winners Pitchdeck",
+    id: 2,
     category: "Pitchdeck",
+    title: "Winners Pitchdeck",
     price: "Rp 199.000",
-    description: "Slide deck berstandar investor dengan narasi storytelling yang telah teruji.",
-    badge: "Founder Pick"
+    image: "./assets/Winners_Pitchdeck.png",
+    link: "#",
   },
   {
-    id: "iphone-creators-luts",
+    id: 3,
+    category: "LUTs",
     title: "iPhone Creators LUTs",
-    category: "LUTs",
     price: "Rp 79.000",
-    description: "Color grading LUTs profesional untuk video cinematic menggunakan iPhone.",
-    badge: "Popular"
+    image: "./assets/iPhone_Creators_LUTs.png",
+    link: "#",
   },
   {
-    id: "sony-creators-luts",
+    id: 4,
+    category: "LUTs",
     title: "Sony Creators LUTs",
-    category: "LUTs",
     price: "Rp 79.000",
-    description: "LUTs S-Log3 dan S-Cinetone khusus kamera Sony untuk hasil warna natural dan mewah.",
-    badge: "Cinematic"
+    image: "./assets/Sony_Creators_LUTs.png",
+    link: "#",
   },
   {
-    id: "perfect-invoice",
-    title: "The Perfect Invoice",
+    id: 5,
     category: "Template",
+    title: "The Perfect Invoice",
     price: "Rp 49.000",
-    description: "Template invoice profesional otomatis untuk freelancer dan agensi kreatif.",
-    badge: "Essential"
+    image: "./assets/The_Perfect_Invoice.png",
+    link: "#",
   },
   {
-    id: "lut-cinespeed",
-    title: "LUT CineSpeed by Garry",
+    id: 6,
     category: "LUTs",
+    title: "LUT CineSpeed by Garry",
     price: "Rp 99.000",
-    description: "Pack LUT instan grading cepat 1-klik untuk content creator harian.",
-    badge: "Pro Pack"
-  }
+    image: "./assets/LUT_CineSpeed_by_Garry.png",
+    link: "#",
+  },
 ];
 
 export const codeSnippets = {
-  "prompt.ts": `// AI-Website Prompt Templates
-import { prompt } from '@garry/ai-kit';
+  filename: "prompt.ts",
+  tabs: ["prompt.ts", "layout.tsx", "deploy.ts"],
+  lines: [
+    "// AI-Website Prompt Templates",
+    "import { prompt } from '@garry/ai-kit'",
+    "",
+    "const site = prompt",
+    "  .style('minimal-dark')",
+    "  .sections(['hero','features','cta'])",
+    "  .ai('claude-4')  // 🤖",
+    "  .deploy('vercel')  // 🚀",
+    "",
+    "export default site.build()"
+  ]
+};
 
-const site = prompt
-  .style('minimal-dark')
-  .sections(['hero', 'features', 'cta'])
-  .ai('claude-3.7')       // 🤖 Smart reasoning
-  .deploy('vercel')       // 🚀 Instant live preview
+export const featuredProduct = {
+  tag: "Featured Drop",
+  title: "AI-Website Prompt Code Templates",
+  description:
+    "Don't build from zero. Give your AI the right foundation — stunning components, proven layouts, high-conversion structures — and ship faster than you ever thought possible.",
+  price: "See Templates",
+  statusBadge: "New templates available",
+  link: "#",
+};
 
-export default site.build();`,
+export const ctaSection = {
+  headline1: "Let's build something",
+  headline2: "that travels",
+  subtext:
+    "For partnerships, campaigns, creator collaborations, or market-entry storytelling aimed at Indonesian audiences, reach out directly.",
+  emailBtn: "business@adplay.id",
+  newsletterBtn: "Join my Newsletter",
+};
 
-  "layout.tsx": `import React from 'react';
-import { Hero, Portfolio, Products, Footer } from '@/components';
-
-export default function Layout() {
-  return (
-    <main className="min-h-screen bg-[#fafaf9] text-[#121212]">
-      <Hero />
-      <Portfolio />
-      <Products />
-      <Footer />
-    </main>
-  );
-}`,
-
-  "deploy.ts": `// Auto-Sync Figma -> Antigravity -> GitHub
-export async function syncFigmaToGitHub(fileKey: string) {
-  const design = await fetchFigmaNodes(fileKey);
-  const reactCode = generateComponents(design);
-  await gitPush({ branch: 'main', message: 'Sync from Figma' });
-  return { status: 'Deployed Live 🚀' };
-}`
+export const footerInfo = {
+  brandName: "Garry Audie",
+  tagline:
+    "A creator exploring tech and AI. Building digital experiences and sharing the journey.",
+  location: "Tangerang, Indonesia • Available Worldwide",
+  email: "business@adplay.id",
+  phone: "(+62) 85176785180",
+  disclaimer:
+    "This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.",
+  copyright: "© 2026 Garry Audie. All rights reserved.",
+  services: ["Car Cinematics", "TV Commercial", "Online Class Production", "Company Profile"],
+  quickLinks: ["Blog", "Portfolio", "About", "Investment", "Contact"],
 };
