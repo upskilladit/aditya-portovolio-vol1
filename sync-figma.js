@@ -1,11 +1,15 @@
 import fs from 'fs';
-import path from 'path';
 import { execSync } from 'child_process';
 
-const FIGMA_TOKEN = 'figd_RXtlrJpPMQmPV2MpZFrGxad-vBRNEqHw7JJlJYgb';
-const FILE_KEY = 'xNWRG9DEQXx9JvjDjbLZuL';
+const FIGMA_TOKEN = process.env.FIGMA_TOKEN || '';
+const FILE_KEY = process.env.FIGMA_FILE_KEY || 'xNWRG9DEQXx9JvjDjbLZuL';
 
 async function sync() {
+  if (!FIGMA_TOKEN) {
+    console.error('❌ Please set FIGMA_TOKEN environment variable in .env');
+    return;
+  }
+
   console.log('🔄 Connecting to Figma API...');
   try {
     const res = await fetch(`https://api.figma.com/v1/files/${FILE_KEY}`, {
