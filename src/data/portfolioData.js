@@ -29,8 +29,10 @@ export const personalInfo = {
 };
 
 export const latestVideo = {
+  id: "00",
   title: "Cara gw catet pengeluaran.",
   thumbnail: "/assets/Latest_YouTube_Video.png",
+  youtubeId: "dQw4w9WgXcQ",
   youtubeUrl: "https://youtube.com/@garryaudie",
 };
 
